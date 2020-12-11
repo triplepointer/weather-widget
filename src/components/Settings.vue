@@ -2,7 +2,7 @@
     <div class="settings">
         <div class="settings__header">
           <h1 class="settings__title">Settings</h1>
-          <span class="settings__exit" @click="$emit('exit',true)">X</span>
+          <span class="settings__exit" @click="$emit('exit',false)">X</span>
         </div>
         <div class="settings__form">
           <draggable :options="{handle: '.burger'}" v-model="weatherObjects" group="cities" @start="drag=true" @end="updateItemOrder">

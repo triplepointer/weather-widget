@@ -5,7 +5,7 @@
             <img 
             class="settings-icon" 
             src="../assets/settings.svg" 
-            @click="$emit('go-to-settings',false)"
+            @click="$emit('go-to-settings',true)"
             >
         </div>
         <div class="cities__body">

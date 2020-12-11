@@ -2,7 +2,7 @@
   <div id="main">
     <div class="container">
       <Settings 
-      v-if="!changeWindow"
+      v-if="changeWindow"
       v-on:exit="changeWindows"
       v-on:remove-city="removeCity"
 
@@ -12,7 +12,7 @@
       v-on:reorder-objects="addNewWeatherObject"
       />
       <Cities 
-      v-if="changeWindow" 
+      v-if="!changeWindow" 
       v-on:go-to-settings="changeWindows"
       
       v-bind:weatherObjects="weatherObjects"
@@ -344,5 +344,6 @@ export default {
 }
 .container {
   max-width: 300px;
+  margin: 0 auto;
 }
 </style>
