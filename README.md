@@ -22,3 +22,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Build web component
+```
+npx vue-cli-service build --target wc --name vue-widget ./src/main.js
+```
